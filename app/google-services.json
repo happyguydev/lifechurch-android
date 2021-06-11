@@ -1,0 +1,96 @@
+{
+  "project_info": {
+    "project_number": "324993099143",
+    "firebase_url": "https://lifechurch-5d3b2.firebaseio.com",
+    "project_id": "lifechurch-5d3b2",
+    "storage_bucket": "lifechurch-5d3b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324993099143:android:91cdab5fff54dac9495f22",
+        "android_client_info": {
+          "package_name": "com.lifechurch.talk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324993099143-7eb05eea5at2dkjc7eofhsh678353h1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "c21ce8f82cf29fc306a809590d8b5f7a9e5528be"
+          }
+        },
+        {
+          "client_id": "324993099143-8fhkh0hp6sc425g2vla43vt6klec1ic4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "6b4b510ffd1cb7eb144653a7a7374ac566f08353"
+          }
+        },
+        {
+          "client_id": "324993099143-8sscac3sjm1d98ecq9iodpb3n2jlf131.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "82151b945995bb34eae3284174412d6b0d37e80e"
+          }
+        },
+        {
+          "client_id": "324993099143-g0dpduhf2qu0b6kphr9314nuks2mfa4t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "1d925778c08400ca9ad611db08239332ef86de78"
+          }
+        },
+        {
+          "client_id": "324993099143-g1afibmja544gm9kv81v0t423hdlup65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "bf21d09863f13012a23b87c2c9cb4577d7e0e5dc"
+          }
+        },
+        {
+          "client_id": "324993099143-gms3arufukfss5j9nsl6r5h0b00ro9r0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "6a137f456fdeae1ec9b52b7b498ea953a3390de3"
+          }
+        },
+        {
+          "client_id": "324993099143-iei6psbeav8badncjhcehnu4sag1ele4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechurch.talk",
+            "certificate_hash": "caf250c1e7156d0ce46d72a044b86c44fc69e642"
+          }
+        },
+        {
+          "client_id": "324993099143-7edk75r5d692uen1361tes24trsdb0eu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhf5SZg7OmjzoYbuKtRune2lIKeEkfcz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324993099143-7edk75r5d692uen1361tes24trsdb0eu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

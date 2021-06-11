@@ -1,0 +1,250 @@
+<resources>
+
+         <!--dates-->
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+
+    <string name="string_contact_list_activity_title">Contacts</string>
+    <string name="string_conversation_list_activity_title">Conversations</string>
+    <string name="string_create_group_activity_title">New Group</string>
+    <string name="string_add_members_activity_title">Add members</string>
+
+    <string name="label_no_conversation_error_title">No conversation!</string>
+    <string name="label_no_conversation_error_subtitle">Press the below button to start a new chat!</string>
+
+    <string name="action_create_group">Create group</string>
+
+    <!--create_group_activity-->
+    <string name="activity_new_group_icon_label">Add\nphoto</string>
+    <string name="activity_new_group_group_name_hint_label">Set a group name</string>
+    <string name="menu_activity_new_group_action_next">Next</string>
+
+    <!--add_members_activity-->
+    <string name="add_members_activity_searchview_query_hint">Search contact</string>
+    <string name="add_members_activity_contact_already_added_label">Already added to the group</string>
+    <string name="add_members_activity_contact_not_added_label">contact is not present in the list</string>
+    <string name="activity_add_member_to_chat_group_selected_contacts_title">Selected contacts</string>
+    <string name="add_members_activity_contacts_title">Contact List</string>
+    <string name="menu_add_members_action_create">Create</string>
+    <string name="menu_add_members_action_add_member">@string/activity_group_admin_panel_add_member_title</string>
+    <string name="menu_add_members_action_next">Next</string>
+
+    <!--activity contact list -->
+    <string name="label_no_contacts_error_title">No contact found</string>
+    <string name="label_no_contacts_error_subtitle">Change the search parameters</string>
+    <string name="activity_contact_list_error_cannot_create_group_offline_label">You can not create the group if you are offline</string>
+
+    <!--activity_group_admin_panel-->
+    <string name="activity_group_admin_panel_members_label">Members</string>
+    <string name="activity_group_admin_panel_group_admin_label">Group Admin</string>
+    <string name="activity_group_admin_panel_created_by_label">Created by </string>
+    <string name="activity_group_admin_panel_created_on_label">Created on </string>
+    <string name="activity_group_admin_panel_group_id_label">id </string>
+    <string name="activity_group_admin_panel_not_available_members_label">Information about members are now unavailable</string>
+    <string name="activity_group_admin_panel_add_member_title">Add member</string>
+    <string name="menu_activity_group_admin_panel_activity_cannot_add_member_offline">Cannot add a member if you are offline</string>
+    <string name="button_group_chatting">Group Chatting</string>
+    <string name="button_invite">Invite</string>
+    <string name="please_give_permissions">Please give permissions</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_btn_label">Remove member</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_btn_label">Leave group</string>
+    <string name="bottom_sheet_group_admin_panel_member_see_profile_btn_label">See profile</string>
+    <string name="bottom_sheet_group_admin_panel_member_send_message_btn_label">Send message</string>
+    <string name="bottom_sheet_group_admin_panel_member_btn_cancel_label">Cancel</string>
+
+    <!--activity_conversation_list-->
+    <string name="activity_conversation_list_adapter_you_label">you</string>
+
+    <!--fragment_conversation_list-->
+    <string name="fragment_conversation_list_my_group_label">Groups</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_title">Remove member</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_message">Do you really want to remove <b>%1$s</b> from the group?</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_message">Do you really want to leave the group</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_positive_click">Remove</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_positive_click">Leave</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_negative_click">Cancel</string>
+
+    <!--activity_message_list-->
+    <string name="activity_message_list_group_info_you_label">you</string>
+    <string name="activity_message_list_convers_with_presence_online">Online</string>
+    <string name="activity_message_list_convers_with_presence_offline">Offline</string>
+    <string name="activity_message_list_progress_dialog_upload">Upload in progress..</string>
+    <string name="activity_message_list_progress_dialog_upload_failed">Cannot complete the upload</string>
+    <string name="activity_message_list_no_message_error_title_label">You have been removed from the group</string>
+    <string name="activity_message_list_no_message_error_subtitle_label">Contact the administrator for more details</string>
+    <string name="activity_message_list_confirm_dialog_upload_title_label">Send image</string>
+    <string name="activity_message_list_confirm_dialog_upload_message_label">Do you want to send this image?</string>
+    <string name="activity_message_list_type_image_label">image</string>
+    <string name="activity_message_list_type_file_label">file</string>
+
+    <!--bottom_sheet_attach-->
+    <string name="bottom_sheet_attach_images_label">Images</string>
+    <string name="bottom_sheet_attach_documents_label">Documents</string>
+
+    <!--activity_public_profile-->
+    <string name="activity_public_profile_presence_online">Online</string>
+    <string name="activity_public_profile_presence_offline">Offline</string>
+
+    <!--activity_group_list-->
+    <string name="activity_group_list_activity_title">My groups</string>
+    <string name="activity_my_groups_list_error_title">No groups</string>
+    <string name="activity_my_groups_list_error_subtitle">You are not a member of any group</string>
+
+    <!--bottom_sheet_conversation_list-->
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_title">Delete chat</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_message">Do you really want to delete the chat?\n The operation cannot be cancelled.</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_button_label">Delete chat</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_positive_button_label">delete chat</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_positive_button_negative">cancel</string>
+
+    <!--activity_chat_login-->
+    <string name="activity_chat_login_no_account_label">No account?</string>
+    <string name="activity_chat_login_signup_label">Sign up</string>
+
+    <!--activity_choose_chat_group_activity-->
+    <string name="activity_choose_chat_group_activity_activity_title">Groups</string>
+
+    <!--menu_fragment_conversations_list-->
+    <string name="menu_fragment_conversations_list_action_archived">Archived</string>
+
+    <!--activity_archived_conversation_list_title-->
+    <string name="activity_archived_conversation_list_title">Archived</string>
+
+    <!--row_archived_conversations-->
+    <string name="row_archived_conversations_textview_reopen">Reopen</string>
+    <string name="row_archived_conversations_closed_label">Closed</string>
+
+    <string name="group_title">Group name</string>
+
+
+
+    <!--added-->
+
+
+    <string name="app_name">lifechurch</string>
+    <string name="app_name_uper">LifeChurch</string>
+    <!--<string name="action_settings">Settings</string>-->
+
+    <string name="fragment_tab_home_direct_message_button_label">Contact on Pharma</string>
+    <string name="fragment_tab_home_direct_message_invite_label">Contact on Phone</string>
+    <string name="fragment_user_profile_id_label">ID</string>
+    <string name="fragment_user_profile_logout_label">Log Out</string>
+    <!--<string name="fragment_tab_home_new_chat_activity_button_label">Start with an activity</string>-->
+
+    <string name="custom_alert_phone">Invite via SMS</string>
+    <string name="custom_alert_email">Invite via Kakao Talk</string>
+    <string name="invite_to_kakao">Invite to kakao talk</string>
+    <string name="InviteActivity_no_app_to_share_to">There is no installed app</string>
+    <string name="MainActivity_title">Invite friends</string>
+    <string name="profile_edit_btn">Edit</string>
+    <string name="profile_save_btn">Save</string>
+    <string name="feedback_label">Feedback List</string>
+    <string name="version_label">version 1.0.0</string>
+    <string name="Announcement_label">Announcement</string>
+    <string name="notification_label">Notifications Setting</string>
+    <string name="Friends_label">Friends</string>
+    <string name="updated_label">Updated on 2020.6.6</string>
+    <string name="theme_label">Color, Font Size, Language</string>
+    <string name="media_label">Media</string>
+    <string name="storage_label">Storage</string>
+    <string name="feedbak_setting_label">Feedback &amp; Inquiry</string>
+    <string name="btn_manage_label">Manage</string>
+    <string name="invite_text_label">Let\'s talk via LifeChurch app!</string>
+    <string name="name_feedback_label">name</string>
+    <string name="detail_feedbakc_label">detail</string>
+    <string name="feedbackinquiry_label">Feedback/ Inquiry</string>
+    <string name="feedback_hint_label">Tell us what\'s going on</string>
+    <string name="feel_label">How do you feel?(optional)</string>
+    <string name="btn_submit_label">Submit</string>
+    <string name="auto_add_friend_label">Auto Add Friends</string>
+    <string name="auto_add_explain_label">Auto add user as Friends  if user is included \n in my phone book</string>
+    <string name="syne_label">Sync Profile info </string>
+    <string name="sync_explain_label">Sync Profile info with website, and,other service</string>
+    <string name="update_label">Update Friends list</string>
+    <string name="updated_date_label">Updated on 2020. 5.21</string>
+    <string name="block_fri_label">Block Friends</string>
+    <string name="manage_fri_label">Manage Blocked Friends</string>
+    <string name="life_lab">Light of Life Preach</string>
+    <string name="noti_lab">Notification</string>
+    <string name="regi_lab">Layman Registeration</string>
+    <string name="certi_lab">Donation Certificate</string>
+    <string name="fami_lab">Family Events</string>
+    <string name="pray_lab">Pray Request</string>
+    <string name="create_group_label">Create Group</string>
+
+
+
+
+    <!--activity_chat_login-->
+    <string name="chat_login_activity_chat_login_email_hint">Email</string>
+    <string name="chat_login_activity_password_hint">Password</string>
+    <string name="chat_login_activity_login_button_label">Login</string>
+
+    <!--activity_chat_signup-->
+    <string name="chat_signup_activity_signup_button_label">Sign up</string>
+    <string name="chat_signup_activity_not_valid_email_label">Email is no valid</string>
+    <string name="chat_signup_activity_not_valid_first_name_label">First name is no valid</string>
+    <string name="chat_signup_activity_not_valid_last_name_label">Last name is no valid</string>
+    <string name="chat_signup_activity_not_valid_password_label">Password is not valid</string>
+    <string name="chat_signup_activity_not_valid_password_length_label">Password too short, enter minimum %1$d characters</string>
+    <string name="chat_signup_activity_not_valid_repeated_password_label">Repeated password is not valid</string>
+    <string name="chat_signup_activity_not_valid_repeated_password_length_label">Repeated password too short, enter minimum %1$d characters</string>
+    <string name="chat_signup_activity_passwords_mismatch_label">Password and repeat password mismatch</string>
+    <string name="chat_signup_activity_email_hint_label">Email</string>
+    <string name="chat_signup_activity_first_name_hint_label">First name</string>
+    <string name="chat_signup_activity_last_name_hint_label">Last name</string>
+    <string name="chat_signup_activity_password_hint_label">Password</string>
+    <string name="chat_signup_activity_repeat_password_hint_label">Confirm password</string>
+
+    <!--added-->
+    <string name="chat_signup_activity_phone_hint_label">Phone</string>
+    <string name="activity_chat_login_forgot_label">Forgot Password</string>
+    <string name="activity_chat_login_remember_label">  Remember me</string>
+    <string name="activity_chat_signup_intro">Please signup with mobile number and email</string>
+    <string name="activity_chat_next">Next</string>
+    <string name="activity_chat_newpass_intro">Please Enter New Password.</string>
+    <string name="activity_chat_resetpass_intro">We will send verification email \nWith 6 digits code.</string>
+    <string name="activity_chat_resetpass_resetpass">Reset Password</string>
+    <string name="activity_chat_terms_intro">Condition of Use</string>
+    <string name="activity_chat_terms_termsofservice"><u>Terms of use &amp; Cookie policy >></u></string>
+    <string name="activity_chat_terms_privacy"><u>Privacy policy >></u></string>
+    <string name="activity_chat_terms_age">Above age > 18</string>
+    <string name="activity_chat_terms_access">Access camera,Media&amp;Phonebook</string>
+    <string name="activity_chat_terms_all">Agree All</string>
+    <string name="activity_chat_terms_next">Agree &amp; Next</string>
+    <string name="activity_chat_verificationemail_intro1">Verification</string>
+    <string name="activity_chat_verificationemail_intro2">We\'ve sent you 6 digit verification code \n to below email.</string>
+    <string name="activity_chat_verificationemail_intro3">Please verify with code in email.</string>
+    <string name="activity_chat_verificationemail_resend">Resend Email</string>
+    <string name="activity_chat_verificationemail_confirm">Confirm</string>
+    <string name="activity_chat_verificationphone_intro1">We\'ve sent you 6 digit verification code \n on given number.</string>
+    <string name="chat_terms_activity_not_valid_agree_label">Please check terms of use</string>
+    <string name="chat_verifyphone_activity_not_valid_code_label">Please enter 6 digit code</string>
+    <string name="activity_chat_profileinpute_intro1">Set Profile</string>
+    <string name="activity_chat_profileinpute_fname">Full Name</string>
+    <string name="activity_chat_profileinpute_status">Add your status</string>
+    <string name="activity_chat_profileinpute_intro2">Profile info</string>
+    <string name="activity_chat_profileinpute_checkbox">Add friends automatically if in phone-book already</string>
+    <string name="chat_signup_activity_not_valid_name_label">User name is no valid</string>
+    <string name="chat_signup_activity_not_valid_status_label">User status is no valid</string>
+    <string name="chatlist_himself_label">Note to self</string>
+
+    <string name="tab_home_title" >Contact</string>
+    <string name="tab_chat_title" >Chat</string>
+    <string name="tab_invite_title" >Invite</string>
+    <string name="tab_profile_title" >Profile</string>
+    <string name="tab_church_title" >Church</string>
+    <string name="theme_lan_title" >Language</string>
+    <string name="theme_font_title" >Font Size</string>
+    <string name="theme_background_title" >Background Color Set</string>
+    <string name="theme_lan_ko" >Korean</string>
+    <string name="theme_lan_en" >English</string>
+    <string name="theme_font_preview" >This is preview of font-size</string>
+
+    <string name="please_edit_group_name">Please Edit Group Name</string>
+
+</resources>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andriod="http://schemas.android.com/tools"
+    android:background="@color/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/mainBackground">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name_uper"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/app_logo"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_chat_profileinpute_intro1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/app_logo"
+            android:layout_marginTop="-30dp"
+            android:textSize="30dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+        <FrameLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/frm_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_layout"
+
+            android:layout_marginTop="0dp"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imv_user_avatar_setting"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_shadow_circle"
+                android:src="@drawable/ic_person_avatar"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                app:riv_corner_radius="75dp"/>
+
+            <ImageView
+                android:id="@+id/ic_avatar_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cameraico"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/frm_profile"
+            android:layout_marginTop="-10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/RR_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_name"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/profilename_icon"
+
+                    android:tint="@color/colorPrimary"></ImageView>
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:hint="@string/activity_chat_profileinpute_fname"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RR_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_status"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/profilename_icon1"></ImageView>
+
+
+                <EditText
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_status"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:hint="@string/activity_chat_profileinpute_status"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewintro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_chat_profileinpute_intro2"
+                android:layout_below="@+id/RR_email"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+            <RelativeLayout
+                android:id="@+id/RR_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@mipmap/call_icon1"
+
+                    android:tint="@color/colorPrimary"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:paddingLeft="20dp"
+                    android:text="+82 1234567890"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RR_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_mail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@mipmap/login_mail"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_mail"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:hint="@string/activity_chat_profileinpute_status"
+                    android:paddingLeft="20dp"
+                    android:text="pharma@gmail.com"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chat_progress_bar_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <CheckBox
+                    android:id="@+id/checkbox_phonebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    android:checked="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkbox_phonebook"
+                    android:text="@string/activity_chat_profileinpute_checkbox"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="@dimen/chat_progress_bar_size"
+                    android:layout_height="@dimen/chat_progress_bar_size"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/buttons"
+            android:text="@string/activity_chat_next"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

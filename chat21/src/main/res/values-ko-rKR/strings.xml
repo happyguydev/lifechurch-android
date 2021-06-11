@@ -1,0 +1,249 @@
+<resources>
+
+    <!--dates-->
+    <string name="today">오늘</string>
+    <string name="yesterday">어제</string>
+
+    <string name="string_contact_list_activity_title">회원정보</string>
+    <string name="string_conversation_list_activity_title">대화창</string>
+    <string name="string_create_group_activity_title">새그룹</string>
+    <string name="string_add_members_activity_title">회원추가</string>
+
+    <string name="label_no_conversation_error_title">대화없음!</string>
+    <string name="label_no_conversation_error_subtitle">새로운대화를해아래버튼을눌러주세요!</string>
+
+    <string name="action_create_group">그룹생성</string>
+
+    <!--create_group_activity-->
+    <string name="activity_new_group_icon_label">사진추가</string>
+    <string name="activity_new_group_group_name_hint_label">그룹이름설정</string>
+    <string name="menu_activity_new_group_action_next">다음</string>
+
+    <!--add_members_activity-->
+    <string name="add_members_activity_searchview_query_hint">회원찾기</string>
+    <string name="add_members_activity_contact_already_added_label">이미추가된회원</string>
+    <string name="add_members_activity_contact_not_added_label">회원이존재하지않습니다</string>
+    <string name="activity_add_member_to_chat_group_selected_contacts_title">선택된회원</string>
+    <string name="add_members_activity_contacts_title">회원목록</string>
+    <string name="menu_add_members_action_create">만들기</string>
+    <string name="menu_add_members_action_add_member">@string/activity_group_admin_panel_add_member_title</string>
+    <string name="menu_add_members_action_next">다음</string>
+
+    <!--activity contact list -->
+    <string name="label_no_contacts_error_title">회원을찾을수없습니다</string>
+    <string name="label_no_contacts_error_subtitle">검색인자를바꿔주세요</string>
+    <string name="activity_contact_list_error_cannot_create_group_offline_label">오프라인에서는그룹을만들수없습니다</string>
+
+    <!--activity_group_admin_panel-->
+    <string name="activity_group_admin_panel_members_label">회원들</string>
+    <string name="activity_group_admin_panel_group_admin_label">그룹관리자</string>
+    <string name="activity_group_admin_panel_created_by_label">Created by </string>
+    <string name="activity_group_admin_panel_created_on_label">Created on </string>
+    <string name="activity_group_admin_panel_group_id_label">아이디 </string>
+    <string name="activity_group_admin_panel_not_available_members_label">회원정보가유용하지않습니다</string>
+    <string name="activity_group_admin_panel_add_member_title">회원추가</string>
+    <string name="menu_activity_group_admin_panel_activity_cannot_add_member_offline">오프라인에서는회원을추가할수없습니다</string>
+    <string name="button_group_chatting">그룹채팅</string>
+    <string name="button_invite">초대하기</string>
+    <string name="please_give_permissions">권한을 부여하십시오</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_btn_label">회원삭제</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_btn_label">그룹탈퇴</string>
+    <string name="bottom_sheet_group_admin_panel_member_see_profile_btn_label">프로필보기</string>
+    <string name="bottom_sheet_group_admin_panel_member_send_message_btn_label">문자보내기</string>
+    <string name="bottom_sheet_group_admin_panel_member_btn_cancel_label">취소</string>
+
+    <!--activity_conversation_list-->
+    <string name="activity_conversation_list_adapter_you_label">당신</string>
+
+    <!--fragment_conversation_list-->
+    <string name="fragment_conversation_list_my_group_label">그룹들</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_title">회원삭제</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_message">정말로삭제하시겠습니까 <b>%1$s</b> 그룹으로부터?</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_message">정말로탈퇴하기원하시나요</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_positive_click">제거</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_positive_click">탈퇴</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_negative_click">취소</string>
+
+    <!--activity_message_list-->
+    <string name="activity_message_list_group_info_you_label">당신</string>
+    <string name="activity_message_list_convers_with_presence_online">온라인</string>
+    <string name="activity_message_list_convers_with_presence_offline">오프라인</string>
+    <string name="activity_message_list_progress_dialog_upload">업로드진행중..</string>
+    <string name="activity_message_list_progress_dialog_upload_failed">업로드할수없습니다</string>
+    <string name="activity_message_list_no_message_error_title_label">그룹으로부터탈퇴하였습니다</string>
+    <string name="activity_message_list_no_message_error_subtitle_label">자세한정보는관리자에게문의</string>
+    <string name="activity_message_list_confirm_dialog_upload_title_label">이미지보내기</string>
+    <string name="activity_message_list_confirm_dialog_upload_message_label">이미지를보내시겠습니까?</string>
+    <string name="activity_message_list_type_image_label">이미지</string>
+    <string name="activity_message_list_type_file_label">화일</string>
+
+    <!--bottom_sheet_attach-->
+    <string name="bottom_sheet_attach_images_label">이미지들</string>
+    <string name="bottom_sheet_attach_documents_label">문서들</string>
+
+    <!--activity_public_profile-->
+    <string name="activity_public_profile_presence_online">온라인</string>
+    <string name="activity_public_profile_presence_offline">오프라인</string>
+
+    <!--activity_group_list-->
+    <string name="activity_group_list_activity_title">내그룹들</string>
+    <string name="activity_my_groups_list_error_title">그룹없슴</string>
+    <string name="activity_my_groups_list_error_subtitle">당신은그룹에속해있지않습니다</string>
+
+    <!--bottom_sheet_conversation_list-->
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_title">대화창삭제</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_message">대화창을정말로삭제하시겠습니까?\n The operation cannot be cancelled.</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_button_label">대화창삭제</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_positive_button_label">대화창삭제</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_positive_button_negative">취소</string>
+
+    <!--activity_chat_login-->
+    <string name="activity_chat_login_no_account_label">계정이없으신가요?</string>
+    <string name="activity_chat_login_signup_label">회원가입</string>
+
+    <!--activity_choose_chat_group_activity-->
+    <string name="activity_choose_chat_group_activity_activity_title">그룹들</string>
+
+    <!--menu_fragment_conversations_list-->
+    <string name="menu_fragment_conversations_list_action_archived">저장됨</string>
+
+    <!--activity_archived_conversation_list_title-->
+    <string name="activity_archived_conversation_list_title">저장됨</string>
+
+    <!--row_archived_conversations-->
+    <string name="row_archived_conversations_textview_reopen">다시열기</string>
+    <string name="row_archived_conversations_closed_label">닫힘</string>
+
+    <string name="group_title">그룹이름</string>
+
+
+
+    <!--added-->
+
+
+    <string name="app_name">생명빛교회</string>
+    <string name="app_name_uper">생명빛교회</string>
+    <!--<string name="action_settings">설정</string>-->
+
+    <string name="fragment_tab_home_direct_message_button_label">회원정보로검색</string>
+    <string name="fragment_tab_home_direct_message_invite_label">전화번호로검색</string>
+    <string name="fragment_user_profile_id_label">아이디</string>
+    <string name="fragment_user_profile_logout_label">로그아웃</string>
+    <!--<string name="fragment_tab_home_new_chat_activity_button_label">시작</string>-->
+
+    <string name="custom_alert_phone">문자로 친구초대</string>
+    <string name="custom_alert_email">카카오톡으로 친구초대</string>
+    <string name="invite_to_kakao">카카오톡으로초대</string>
+    <string name="InviteActivity_no_app_to_share_to">설치된앱이없습니다</string>
+    <string name="MainActivity_title">친구초대</string>
+    <string name="profile_edit_btn">입력</string>
+    <string name="profile_save_btn">저장</string>
+    <string name="feedback_label">피드백목록</string>
+    <string name="version_label">버젼 1.0.0</string>
+    <string name="Announcement_label">공지사항</string>
+    <string name="notification_label">알림설정</string>
+    <string name="Friends_label">친구들</string>
+    <string name="updated_label">업데이트 2020.6.6</string>
+    <string name="theme_label">색갈, 글자크기, 언어</string>
+    <string name="media_label">미디어</string>
+    <string name="storage_label">저장소</string>
+    <string name="feedbak_setting_label">Feedback &amp; 질문</string>
+    <string name="btn_manage_label">관리</string>
+    <string name="invite_text_label">생명빛교회앱으로대화창초대</string>
+    <string name="name_feedback_label">이름</string>
+    <string name="detail_feedbakc_label">세부정보</string>
+    <string name="feedbackinquiry_label">피드백/ 질문</string>
+    <string name="feedback_hint_label">알려주세요</string>
+    <string name="feel_label">기분이 어떠세요?(선택)</string>
+    <string name="btn_submit_label">제출</string>
+    <string name="auto_add_friend_label">자동친구추가</string>
+    <string name="auto_add_explain_label">전화번호부에서사용자자동친구추가</string>
+    <string name="syne_label">프로필정보동기화 </string>
+    <string name="sync_explain_label">다른웹사이트에프로필정보동기화</string>
+    <string name="update_label">업데이트친구목록</string>
+    <string name="updated_date_label">업데이트 2020. 5.21</string>
+    <string name="block_fri_label">친구차단</string>
+    <string name="manage_fri_label">친구차단관리</string>
+    <string name="life_lab">생명의말씀</string>
+    <string name="noti_lab">공지사항</string>
+    <string name="regi_lab">신자등록</string>
+    <string name="certi_lab">기부금영수증</string>
+    <string name="fami_lab">교회행사</string>
+    <string name="pray_lab">기도요청</string>
+    <string name="create_group_label">그룹만들기</string>
+
+
+
+
+    <!--activity_chat_login-->
+    <string name="chat_login_activity_chat_login_email_hint">이메일</string>
+    <string name="chat_login_activity_password_hint">암호</string>
+    <string name="chat_login_activity_login_button_label">로그인</string>
+
+    <!--activity_chat_signup-->
+    <string name="chat_signup_activity_signup_button_label">회원가입</string>
+    <string name="chat_signup_activity_not_valid_email_label">이메일이유효하지않습니다</string>
+    <string name="chat_signup_activity_not_valid_first_name_label">\'이름\'이 유효하지않습니다</string>
+    <string name="chat_signup_activity_not_valid_last_name_label">\'성\'이 유효하지않습니다</string>
+    <string name="chat_signup_activity_not_valid_password_label">암호가유효하지않습니다</string>
+    <string name="chat_signup_activity_not_valid_password_length_label">암호가너무짧습니다 %1$d characters</string>
+    <string name="chat_signup_activity_not_valid_repeated_password_label">암호가유효하지않습니다</string>
+    <string name="chat_signup_activity_not_valid_repeated_password_length_label">확인된 암호가너무짧습니다 %1$d characters</string>
+    <string name="chat_signup_activity_passwords_mismatch_label">확인된 암호가일치하지않습니다</string>
+    <string name="chat_signup_activity_email_hint_label">이메일</string>
+    <string name="chat_signup_activity_first_name_hint_label">이름 </string>
+    <string name="chat_signup_activity_last_name_hint_label">성</string>
+    <string name="chat_signup_activity_password_hint_label">암호</string>
+    <string name="chat_signup_activity_repeat_password_hint_label">암호확인</string>
+
+    <!--added-->
+    <string name="chat_signup_activity_phone_hint_label">전화번호</string>
+    <string name="activity_chat_login_forgot_label">암호분실</string>
+    <string name="activity_chat_login_remember_label"> 아이디기억하기</string>
+    <string name="activity_chat_signup_intro">전화번호와이메일로회원가입해주세요</string>
+    <string name="activity_chat_next">다음</string>
+    <string name="activity_chat_newpass_intro">새로운암호를입력해주세요</string>
+    <string name="activity_chat_resetpass_intro">6자리인증키를이메일로발송</string>
+    <string name="activity_chat_resetpass_resetpass">암호다시설정</string>
+    <string name="activity_chat_terms_intro">사용조건</string>
+    <string name="activity_chat_terms_termsofservice"><u>Terms of use &amp; 쿠키정책 >></u></string>
+    <string name="activity_chat_terms_privacy"><u>개인보호정책 >></u></string>
+    <string name="activity_chat_terms_age">18세이상</string>
+    <string name="activity_chat_terms_access">Access camera,Media&amp;전화번호부</string>
+    <string name="activity_chat_terms_all">모두동의</string>
+    <string name="activity_chat_terms_next">Agree &amp; Next</string>
+    <string name="activity_chat_verificationemail_intro1">인증</string>
+    <string name="activity_chat_verificationemail_intro2">이메일로6자리인증키를발송했습니다</string>
+    <string name="activity_chat_verificationemail_intro3">이메일로받은코드로인증해주세요</string>
+    <string name="activity_chat_verificationemail_resend">이메일로다시보내기</string>
+    <string name="activity_chat_verificationemail_confirm">확인</string>
+    <string name="activity_chat_verificationphone_intro1">해당번호로6자리인증키를보냈습니다</string>
+    <string name="chat_terms_activity_not_valid_agree_label">사용조건을확인해주세요</string>
+    <string name="chat_verifyphone_activity_not_valid_code_label">6자리인증키를입력해주세요</string>
+    <string name="activity_chat_profileinpute_intro1">프로필설정</string>
+    <string name="activity_chat_profileinpute_fname">전체이름</string>
+    <string name="activity_chat_profileinpute_status">직분입력</string>
+    <string name="activity_chat_profileinpute_intro2">프로필정보</string>
+    <string name="activity_chat_profileinpute_checkbox">전화번호부에있는친구자동추가</string>
+    <string name="chat_signup_activity_not_valid_name_label">사용자이름이유효하지않습니다</string>
+    <string name="chat_signup_activity_not_valid_status_label">사용자직분이유효하지않습니다</string>
+    <string name="chatlist_himself_label">자신에게알림</string>
+
+    <string name="tab_home_title" >연락처</string>
+    <string name="tab_chat_title" >채팅</string>
+    <string name="tab_invite_title" >초대</string>
+    <string name="tab_profile_title" >프로필</string>
+    <string name="tab_church_title" >교회</string>
+    <string name="theme_lan_title" >언어</string>
+    <string name="theme_font_title" >글자체</string>
+    <string name="theme_background_title" >배경색설정</string>
+    <string name="theme_lan_ko" >한국어</string>
+    <string name="theme_lan_en" >영어</string>
+    <string name="theme_font_preview" >글자크기미리보기</string>
+    <string name="please_edit_group_name">그룹이름을 편집해주세요</string>
+
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/windowBackground"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <!-- toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/mainBackground" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--nestedscrollview unique child-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--header-->
+            <!--todo-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/chat_margin_normal"
+                android:background="@color/cardview_light_background"
+                app:cardCornerRadius="@dimen/cardview_default_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/chat_padding_normal">
+
+                    <TextView
+                        android:id="@+id/message"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/chat_padding_x_small" />
+
+                    <!--add group box-->
+                    <RelativeLayout
+                        android:id="@+id/group_icon_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/group_icon"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/bg_shadow_circle"
+                            android:padding="7dp"
+                            android:src="@drawable/ic_person_avatar"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            app:riv_corner_radius="75dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ic_avatar_add"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cameraico"
+                            android:layout_alignBottom="@+id/group_icon"
+                            android:layout_alignRight="@+id/group_icon"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <!--                        <ImageView-->
+                        <!--                            android:id="@+id/group_icon"-->
+                        <!--                            style="@style/Base.TextAppearance.AppCompat.Small"-->
+                        <!--                            android:layout_width="@dimen/chat_activity_new_group_recipient_picture_size"-->
+                        <!--                            android:layout_height="@dimen/chat_activity_new_group_recipient_picture_size"-->
+                        <!--                            android:layout_centerHorizontal="true"-->
+                        <!--                            android:layout_marginTop="@dimen/chat_margin_normal"-->
+                        <!--                            android:visibility="visible" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/group_icon_label"-->
+                        <!--                            style="@style/Base.TextAppearance.AppCompat.Small"-->
+                        <!--                            android:layout_width="@dimen/chat_activity_new_group_group_icon_label_width"-->
+                        <!--                            android:layout_height="@dimen/chat_activity_new_group_group_icon_label_height"-->
+                        <!--                            android:layout_centerHorizontal="true"-->
+                        <!--                            android:layout_marginTop="@dimen/chat_margin_normal"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:text="@string/activity_new_group_icon_label" />-->
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_title"
+                        android:textColor="#92b7fe"
+                        android:gravity="center"
+                        android:textSize="30dp"/>
+                    <RelativeLayout
+                        android:id="@+id/RR_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:id="@+id/img_name"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/profilename_icon1"
+
+                            ></ImageView>
+
+
+                        <EditText
+                            android:id="@+id/group_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_toRightOf="@+id/img_name"
+                            android:layout_weight="1"
+                            android:background="@drawable/ripple"
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:text=""
+                            android:textColor="#000"
+                            android:textSize="20dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

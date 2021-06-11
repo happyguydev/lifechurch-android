@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/mainBackground"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/mainBackground">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name_uper"
+            android:layout_toRightOf="@+id/app_logo"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="02:55 Left"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_chat_verificationemail_intro1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_layout"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_chat_verificationemail_intro2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewtitle"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pharmabase@gmail.com"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewdetail"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:id="@+id/textViewPls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_chat_verificationemail_intro3"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/code6"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/resendBtn"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/code6"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:maxLength="1"
+            android:background="@drawable/ripple1"
+            />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="1"
+            android:background="@drawable/ripple1"            />
+        <EditText
+            android:id="@+id/num3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="1"
+            android:background="@drawable/ripple1"            />
+        <EditText
+            android:id="@+id/num4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="1"
+            android:background="@drawable/ripple1"            />
+        <EditText
+            android:id="@+id/num5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="1"
+            android:background="@drawable/ripple1"            />
+        <EditText
+            android:id="@+id/num6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="1"
+            android:background="@drawable/ripple1"            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:text="@string/activity_chat_verificationemail_confirm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+    <Button
+        android:id="@+id/resendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttons"
+        android:layout_above="@+id/nextBtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_chat_verificationemail_resend"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+
+
+
+
+</RelativeLayout>

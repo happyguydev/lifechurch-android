@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/reskin_main"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/reskin_main">
+
+        <ToggleButton
+            android:id="@+id/toggleLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            android:textOn="한국어"
+            android:textOff="ENG"
+            android:backgroundTint="#C5E0B4"/>
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="200dp"
+            android:layout_height="108dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/splashlogo_img" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/app_name_uper"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/chat_padding_big">
+
+                <RelativeLayout
+                    android:id="@+id/RR_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/img_mail"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/useremail_img"/>
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toRightOf="@+id/img_mail"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbackground_img1"
+                        android:hint="@string/chat_login_activity_chat_login_email_hint"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="20dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/RR_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/RR_email"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/img_password"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/password_img"/>
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toRightOf="@+id/img_password"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbackground_img2"
+                        android:hint="@string/chat_login_activity_password_hint"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="18dp"/>
+
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox_remember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RR_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/activity_chat_login_remember_label"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:buttonTint="#e4c5e4"/>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/textbackground_img1"
+                    android:text="@string/chat_login_activity_login_button_label"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/textbackground_img2"
+                    android:text="@string/activity_chat_login_signup_label"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+
+                <Button
+                    android:id="@+id/forgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/textbackground_img1"
+                    android:text="@string/activity_chat_login_forgot_label"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:indeterminate="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:minHeight="50dp"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

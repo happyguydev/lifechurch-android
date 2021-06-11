@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.AppBarLayout
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainBackground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/appImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name_uper"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/appImage"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/back"
+                android:clickable="true"
+                android:layout_marginRight="20dp"
+                android:foregroundGravity="right" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+</android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/appbar"
+        android:padding="@dimen/chat_padding_normal">
+
+
+
+
+        <!--picture, fullname and email-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- picture-->
+            <RelativeLayout
+                android:id="@+id/frm_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/bg_shadow_circle"
+                    android:src="@drawable/ic_person_avatar"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    app:riv_corner_radius="75dp"/>
+
+
+                <ImageView
+                    android:id="@+id/ic_avatar_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cameraico"
+                    android:layout_alignBottom="@+id/profile_picture"
+                    android:layout_alignRight="@+id/profile_picture"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+            <!--fullname-->
+            <RelativeLayout
+                android:id="@+id/RR_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_name"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/profilename_icon"
+
+                    ></ImageView>
+
+
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:hint="@string/activity_chat_profileinpute_fname"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RR_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_status"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profilename_icon1"></ImageView>
+
+
+                <EditText
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_status"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:hint="@string/activity_chat_profileinpute_status"
+                    android:paddingLeft="20dp"
+                    android:text="pharma@gmail.com"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RR_email"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:background="#92b7fe"
+                android:layout_marginRight="30dp"/>
+
+
+
+            <!--email-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_email"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/login_mail"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_email"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:hint="@string/chat_login_activity_chat_login_email_hint"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="#FF646262"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+            <!--phone number-->
+            <RelativeLayout
+                android:id="@+id/RR_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/call_icon1"
+
+                    ></ImageView>
+
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:paddingLeft="20dp"
+                    android:text="+82 1234567890"
+                    android:textColor="#FF646262"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+            <!--status-->
+
+
+        </LinearLayout>
+
+        <!--userid-->
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/chat_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_user_profile_id_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/chat_margin_normal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="15sp" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/chat_progress_bar_size"
+            android:layout_height="@dimen/chat_progress_bar_size"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/profile_edit"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+            android:background="@drawable/profile_button"
+            android:text="@string/profile_edit_btn"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <Button
+                android:id="@+id/logout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chat_login_activity_chat_login_button_login_height"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="30dp"
+                android:background="@drawable/profile_button"
+                android:text="@string/fragment_user_profile_logout_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_weight="1"
+                android:textColor="@color/chat_login_activity_chat_login_button_login_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

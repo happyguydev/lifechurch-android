@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:ignore="MissingDefaultResource">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/mainBackground"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/appImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_uper"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/appImage"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/back"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp"
+                    android:foregroundGravity="right" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/theme_lan_title"
+                android:textSize="16dp"
+                android:layout_gravity="center_vertical"/>
+            <RadioGroup
+                android:id="@+id/radioLanguage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.3">
+
+                <RadioButton
+                    android:id="@+id/radioko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_lan_ko"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textSize="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_lan_en"
+                    android:layout_weight="1"
+                    android:textSize="15dp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:text="@string/theme_font_title"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/btn_default_font"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Default"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="A"
+                    android:textSize="20dp"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:max="50"
+                    android:min="5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:text="A"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/changeFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/theme_font_preview"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/backgroundcolorlbl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/theme_background_title"
+                android:textSize="16dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/themecolor"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#B2C7DA"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_default_color"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Set Default"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/default_color"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#B2C7DA"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
